@@ -17,6 +17,9 @@
   <body>
     <header class="fixed-header">
       <div class="logo">Big<span>Cedar🌴</span></div>
+      <button class="nav-btn" id="nav-btn">
+        <i class="fas fa-bars"></i>
+      </button>
       <nav>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
@@ -25,7 +28,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="toggle"></div>
+      <div class="radio-btn"></div>
     </header>
 
     <section class="section home">
@@ -33,12 +36,14 @@
         <h1><span></span></h1>
       </div>
 
-      <h1 class="my">Hi, I'm Godwin</h1>
+      <div class="tell">
+        <h1 class="my">Hi, I'm Godwin</h1>
 
-      <p class="description">
-        A passionate and motivated programmer with expertise in identifying bugs
-        and quickly finding the best solutions.
-      </p>
+        <p class="description">
+          A passionate and motivated programmer with expertise in identifying
+          bugs and quickly finding the best solutions.
+        </p>
+      </div>
 
       <div class="buttons">
         <button class="btncontact">Got a project?</button>
@@ -52,13 +57,13 @@
       <br />
       <div class="content-container">
         <div class="left-box">
-          <img src="file.png" alt="" class="images" />
+          <img src="you.jpg" alt="" class="images" />
         </div>
         <div class="right-box">
           <p>
-            <span class="welcome">Hello and welcome!</span> <br /><br />I am
-            Godwin Ekoh, a dedicated creative enthusiast with a primary focus on
-            frontend web development.
+            <span class="welcome">Hello and welcome!</span> <br />
+            <br />I am Godwin Ekoh, a dedicated creative enthusiast with a
+            primary focus on frontend web development.
             <br />
             I have over four years of hands-on experience as an IT support
             specialist. During this time, I have honed my skills in providing
@@ -79,11 +84,17 @@
             stunning website, Manage digital assest, or need IT support, I am
             here to help you achieve your goals with dedication and creativity.
           </p>
-          <br />
+
+          <!-- <div class="shift">
+            <button class="btnlearn-more">
+              Let's Talk <i class="fa-solid fa-message"></i>
+            </button>
+          </div> -->
         </div>
-        <button class="btnlearn-more">
+
+        <!-- <button class="btnlearn-more">
           Let's Talk <i class="fa-solid fa-message"></i>
-        </button>
+        </button> -->
       </div>
     </section>
 
@@ -152,5 +163,19 @@
         <i class="fa-brands fa-linkedin"></i>
       </div>
     </footer>
+    <script>
+      document.getElementById("nav-btn").addEventListener("click", function () {
+        document.getElementById("nav-links").classList.toggle("nav-active");
+      });
+
+      // document.addEventListener("DOMContentLoaded", () => {
+      //   const navMenu = document.getElementById("nav-btn");
+      //   const navLinks = document.getElementById("nav-links");
+
+      //   navMenu.addEventListener("click", () => {
+      //     navLinks.classList.toggle("active");
+      //   });
+      // });
+    </script>
   </body>
 </html>
